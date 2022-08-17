@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Lobster&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+path {
+    fill: transparent;
+}
+
+text {
+    fill: #ff9800;
+}
+
+.image-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    background-color: #820000;
+    position: relative;
+}
+
+.title {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title > span {
+    z-index: 10;
+    font-size: 25px;
+    font-family: "Lobster", cursive;
+}
+
+.title > h1 {
+    z-index: 10;
+    font-size: 30px;
+    font-family: "Acme", sans-serif;
+}
+
+.title > span:hover,
+.title > h1:hover {
+    user-select: none;
+    color: yellow !important;
+}
+
+.berkibar {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.berkibar > .tiang {
+    width: 225px;
+    height: 700px;
+    background-image: url("assets/tiang.svg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.berkibar > .tiang > .bendera {
+    width: 104px;
+    height: 74px;
+    background-image: url("assets/bendera.svg");
+    background-size: cover;
+    position: absolute;
+    left: calc(100% / 2);
+    /* top: 37px; */
+    bottom: 185px;
+    animation: bendera 5s 2s ease-out forwards;
+    -o-animation: bendera 5s 2s ease-out forwards;
+    -moz-animation: bendera 5s 2s ease-out forwards;
+    -webkit-animation: bendera 5s 2s ease-out forwards;
+    opacity: 1;
+    z-index: 1;
+}
+
+@keyframes bendera {
+    0% {
+        transform: translateY(0);
+        -o-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(calc(-425px + 20px));
+        -o-transform: translateY(calc(-425px + 20px));
+        -moz-transform: translateY(calc(-425px + 20px));
+        -webkit-transform: translateY(calc(-425px + 20px));
+    }
+}
+
+.peserta {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.pejuang {
+    width: 300px;
+    height: 300px;
+    background-image: url("assets/pejuang.png");
+    background-size: cover;
+    background-position: center right;
+    opacity: 1;
+    animation: shake 0.5s 2s infinite alternate;
+    -o-animation: shake 0.5s 2s infinite alternate;
+    -moz-animation: shake 0.5s 2s infinite alternate;
+    -webkit-animation: shake 0.5s 2s infinite alternate;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+        -o-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(1vh);
+        -o-transform: translateX(1vh);
+        -moz-transform: translateX(1vh);
+        -webkit-transform: translateX(1vh);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-2vh);
+        -o-transform: translateX(-2vh);
+        -moz-transform: translateX(-2vh);
+        -webkit-transform: translateX(-2vh);
+    }
+}
+
+/* .pejuang2 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 350px;
+}
+
+.pejuang2 > img {
+    object-position: center right;
+}
+
+.pejuang3 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: calc(50vh - 150px);
+    left: calc(50vw - 300px);
+}
+
+.pejuang3 > img {
+    object-position: center right;
+} */
+
+@media only screen and (max-width: 1200px) {
+    .berkibar > .tiang {
+        height: 300px;
+        width: 100px;
+    }
+
+    .berkibar > .tiang > .bendera {
+        height: 52px;
+        width: 75px;
+        bottom: 75px;
+    }
+
+    @keyframes bendera {
+        0% {
+            transform: translateY(0);
+            -o-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -webkit-transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(calc(-200px + 40px));
+            -o-transform: translateY(calc(-200px + 40px));
+            -moz-transform: translateY(calc(-200px + 40px));
+            -webkit-transform: translateY(calc(-200px + 40px));
+        }
+    }
+
+    .pejuang {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .berkibar > .tiang {
+        height: 300px;
+        width: 100px;
+    }
+
+    .berkibar > .tiang > .bendera {
+        height: 52px;
+        width: 75px;
+        bottom: 75px;
+    }
+
+    @keyframes bendera {
+        0% {
+            transform: translateY(0);
+            -o-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -webkit-transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(calc(-200px + 40px));
+            -o-transform: translateY(calc(-200px + 40px));
+            -moz-transform: translateY(calc(-200px + 40px));
+            -webkit-transform: translateY(calc(-200px + 40px));
+        }
+    }
+
+    .pejuang {
+        width: 150px;
+        height: 150px;
+    }
+}
