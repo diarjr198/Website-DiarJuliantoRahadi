@@ -4,12 +4,12 @@ Filosofi Website yang saya buat yaitu menggambarkan sebuah pelaksanaan upacara p
 
 ## Pengumpulan Lomba CuyUniverse
 
-| Title                   |     | Description                                                               |
-| ----------------------- | --- | ------------------------------------------------------------------------- |
-| **Nama Discord dan Id** | :   | diarjr (482795394502230065)                                               |
-| **Author**              | :   | Diar Julianto Rahadi                                                      |
-| **Tema**                | :   | Perlawanan Perjajahan 1945                                                |
-| **Category**            | :   | Desain Website                                                            |
-| **Animasi Digunakan**   | :   | [native css](styles.css)                                                  |
-| **Font Digunakan**      | :   | [Acme, Lobster](https://fonts.google.com/specimen/Acme || Lobster)        |
-| **Referensi**           | :   | [wegodev](instagram.com)                                                  |
+| Title                   |     | Description                                            |
+| ----------------------- | --- | ------------------------------------------------------ | --- | -------- |
+| **Nama Discord dan Id** | :   | diarjr (482795394502230065)                            |
+| **Author**              | :   | Diar Julianto Rahadi                                   |
+| **Tema**                | :   | Perlawanan Perjajahan 1945                             |
+| **Category**            | :   | Desain Website                                         |
+| **Animasi Digunakan**   | :   | [native css](styles.css)                               |
+| **Font Digunakan**      | :   | [Acme, Lobster](https://fonts.google.com/specimen/Acme |     | Lobster) |
+| **Referensi**           | :   | [instagram](instagram.com)                           |
